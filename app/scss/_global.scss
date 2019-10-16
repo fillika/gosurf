@@ -7,6 +7,11 @@ a {
   display: inline-block;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
 .suptitle-left {
   font-style: normal;
   font-weight: normal;

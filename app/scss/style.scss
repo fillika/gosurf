@@ -7,15 +7,50 @@
   font-size: 10px;
   position: relative;
   height: 100vh;
-}
+  color: #fff;
 
-.header__slider {
-  &-item {
-    height: 100vh;
-    background-image: url(../img/header_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  &__slider {
+    &-item {
+      height: 100vh;
+      background-image: url(../img/header_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20em;
+    line-height: 156px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.07;
+    max-width: 467px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  &__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  &__location {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1.05px;
+
+    &::before {
+      content: url(../img/marker.svg);
+    }
   }
 }
 
@@ -61,7 +96,7 @@
 
   .slick-current {
     .dots-box {
-      border-color: #4af6cd;
+      border-color: $green;
     }
   }
 }
@@ -84,6 +119,39 @@
     font-weight: 300;
     font-size: 1.6em;
     line-height: 19px;
+  }
+}
+
+.date {
+  text-align: center;
+  width: 81px;
+  margin: auto;
+
+  &__day {
+    font-weight: 800;
+    font-size: 7.2em;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
+
+  &__month,
+  &__year {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+  }
+
+  &__month {
+    width: 30px;
+    text-align: left;
+    border-right: 1px solid #fff;
+  }
+
+  &__year {
+    text-align: right;
+    width: 40px;
   }
 }
 
