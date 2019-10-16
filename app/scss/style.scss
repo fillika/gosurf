@@ -64,6 +64,20 @@
   &__date {
     padding-top: 20px;
   }
+
+  &__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 210px;
+    bottom: 30px;
+    z-index: 3;
+  }
 }
 
 .slider-item {
@@ -187,6 +201,20 @@
   &__text {
     display: block;
     padding-top: 6px;
+  }
+}
+
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: linedash 3s infinite 6s;
+}
+
+@keyframes linedash {
+  from {
+    stroke-dashoffset: 600;
+  } to {
+    stroke-dashoffset: 0;
   }
 }
 
