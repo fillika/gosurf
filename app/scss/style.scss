@@ -1,11 +1,47 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 
-body {
-  font-family: "Fira Sans", sans-serif;
+.header {
+  font-size: 10px;
 }
 
+.header__slider {
+  &-item {
+    height: 100vh;
+    background-image: url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
 
+.slider-item {
+  color: #ffffff;
+
+  &__info {
+    position: absolute;
+    right: 80px;
+    bottom: 115px;
+    text-align: right;
+
+    &-title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 8em;
+      line-height: 86px;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 4em;
+      line-height: 86px;
+      text-transform: uppercase;
+    }
+  }
+}
 
 @import "media";
