@@ -13,7 +13,31 @@ a {
   font-size: 2.2em;
   line-height: 32px;
   letter-spacing: 7.33333px;
-  text-transform: uppercase;
   mix-blend-mode: normal;
   opacity: 0.5;
+  padding-left: 103px;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 1px;
+    left: 0;
+    top: 50%;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  z-index: 4;
+  cursor: pointer;
+
+  &__left {
+    right: 125px;
+  }
 }

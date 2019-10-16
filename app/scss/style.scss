@@ -19,6 +19,7 @@
 
 .slider-item {
   color: #ffffff;
+  text-transform: uppercase;
 
   &__info {
     position: absolute;
@@ -26,20 +27,24 @@
     bottom: 115px;
     text-align: right;
 
-    &-title {
+    &-suptitle {
+      margin-bottom: 5px;
+    }
+
+    &-title,
+    &-text {
       font-style: normal;
       font-weight: 800;
       font-size: 8em;
       line-height: 86px;
-      text-transform: uppercase;
+    }
+
+    &-title {
+      margin-bottom: 48px;
     }
 
     &-text {
-      font-style: normal;
-      font-weight: 800;
       font-size: 4em;
-      line-height: 86px;
-      text-transform: uppercase;
     }
   }
 }
