@@ -1,10 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
+  background-color: #171919;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  box
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+  color: #fff;
 }
 
 ul,
@@ -47,4 +63,40 @@ li {
   &__left {
     right: 125px;
   }
+}
+
+.title {
+  &__span {
+    font-size: 20em;
+    mix-blend-mode: normal;
+    color: rgba(#fff, 0.02);
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    transform: translateX(-50px);
+  }
+
+  &__h3 {
+    font-size: 0.4em;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      top: 0;
+      right: 0;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
 }
