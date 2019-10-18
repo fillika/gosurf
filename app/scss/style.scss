@@ -226,6 +226,14 @@
     padding-right: 4.204%;
     margin-top: -86px;
   }
+
+  &-box {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+  }
 }
 
 @import "media";
