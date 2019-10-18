@@ -116,3 +116,15 @@ li {
     font-weight: 100;
   }
 }
+
+.btn {
+  font-size: 4em;
+  line-height: 36px;
+  font-weight: 800;
+
+  &__span {
+    padding: 17px 57px 15px 17px;
+    background-color: $green;
+    display: inline-block;
+  }
+}
