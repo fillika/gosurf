@@ -81,7 +81,7 @@
 .slider-item {
   &__info {
     position: absolute;
-    right: 80px;
+    right: 4.204%;
     bottom: 115px;
     text-align: right;
 
@@ -109,7 +109,7 @@
 
 .slider-dots {
   position: absolute;
-  right: 50px;
+  right: 2.6%;
   bottom: 40px;
   max-width: 920px;
   width: 100%;
@@ -216,6 +216,16 @@
 
 .surf {
   padding: 160px 0 210px;
+  background-image: url(../img/big_point.svg);
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &__subtitle {
+    text-align: right;
+    padding-right: 4.204%;
+    margin-top: -86px;
+  }
 }
 
 @import "media";
