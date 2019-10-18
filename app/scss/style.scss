@@ -228,11 +228,58 @@
   }
 
   &-box {
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 750px;
+
+    &__inner {
+      min-height: 750px;
+      background: rgba(#1c2121, 0.85);
+      position: relative;
+
+      &-title {
+        font-weight: 800;
+        font-size: 4em;
+        line-height: 36px;
+        padding: 72px 0 0 40px;
+        width: 140px;
+      }
+
+      &-location {
+        font-size: 1.8em;
+        line-height: 22px;
+        letter-spacing: 8px;
+        font-weight: normal;
+        width: 0;
+        height: 0;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: 40px;
+        bottom: 80px;
+        white-space: nowrap;
+      }
+
+      &-btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  &-slider {
+    padding-top: 110px;
+
+    .slick-arrow {
+      top: 50px;
+      opacity: 0.25;
+    }
+  }
+
+  &__span {
+    font-weight: 100;
   }
 }
 
