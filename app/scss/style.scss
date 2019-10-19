@@ -215,7 +215,7 @@
 }
 
 .surf {
-  padding: 160px 0 210px;
+  padding: 160px 0 120px;
   background-image: url(../img/big_point.svg);
   background-position: right 200px;
   background-repeat: no-repeat;
@@ -236,6 +236,15 @@
       min-height: 750px;
       background: rgba(#1c2121, 0.85);
       position: relative;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: rgba(#1c2121, 0.3);
+
+        .surf-box__inner-btn {
+          display: block;
+        }
+      }
 
       &-title {
         font-weight: 800;
@@ -265,6 +274,7 @@
         right: 0;
         bottom: 0;
         text-align: center;
+        display: none;
       }
     }
   }
@@ -275,6 +285,40 @@
     .slick-arrow {
       top: 50px;
       opacity: 0.25;
+    }
+
+    .slick-slide:nth-child(4n + 1) {
+      .surf-box {
+        margin-top: 32px;
+        z-index: 1;
+      }
+    }
+    .slick-slide:nth-child(4n + 2) {
+      .surf-box {
+        z-index: 2;
+      }
+    }
+
+    .slick-slide:nth-child(4n + 3) {
+      .surf-box {
+        margin-top: 89px;
+        margin-left: 0;
+      }
+    }
+    .slick-slide:nth-child(4n + 4) {
+      .surf-box {
+        z-index: 4;
+      }
+    }
+
+    .slick-current {
+      .surf-box__inner {
+        background: rgba(#1c2121, 0.3);
+
+        &-btn {
+          display: block;
+        }
+      }
     }
   }
 
