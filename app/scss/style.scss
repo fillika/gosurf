@@ -335,6 +335,49 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+
+  .slick-current {
+    .slider-dots {
+      &__content {
+        display: block;
+        width: 285px;
+        padding: 28px 31px 31px 32px;
+
+        &-row {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &-title {
+          font-size: 1.8em;
+          line-height: 26px;
+          font-weight: 800;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            background-color: $green;
+            width: 80px;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        &-subtitle {
+          font-size: 1.6em;
+          line-height: 19px;
+          text-transform: capitalize;
+        }
+      }
+
+      &__circle {
+      }
+    }
+  }
 }
 
 .slider-dots {
